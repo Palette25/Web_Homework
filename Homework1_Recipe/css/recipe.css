@@ -1,0 +1,31 @@
+/* Body's main definition, then we don't have to define any other
+repeat-propety objects inside the body*/
+body{
+	color: #404040;
+	font-size: 11pt;
+	font-family: Georgia;
+	width: 1024px;
+	background-image: url("../img/silverware.jpg");
+}
+
+.heading{
+	color: #A4A400;
+	background-color: #F0F0F0;
+	font-family: Verdana;
+	text-decoration: underline;
+	letter-spacing: 0.2em;
+	font-size: 18pt;
+}
+.link {
+	color: #A4A400;
+}
+
+.quoatation{
+	font-style: italic;
+	background-color:  #FFFFC8;
+}
+
+/* In order to change the black circle into good photo*/
+.list_ele{
+	list-style-image: url("../img/pie_icon.gif");
+}
