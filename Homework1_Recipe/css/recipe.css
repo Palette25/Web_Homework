@@ -6,6 +6,7 @@ body{
 	font-family: Georgia;
 	width: 1024px;
 	background-image: url("../img/silverware.jpg");
+	background-attachment: fixed;
 }
 
 .heading{

@@ -5,6 +5,7 @@ body{
     background-color: #F8F8F8;
 }
 
+/* top black header */
 .header{
     height: 30px;
     color: white;
@@ -15,6 +16,7 @@ body{
     right: 0;
 }
 
+/* span elements inside header */
 .header>span{
     height: 30px;
     line-height: 30px;
@@ -35,13 +37,13 @@ body{
     background-color: gray;
 }
 
+/* top navigation line */
 .top{
     margin-top: 40px;
     margin-left: 72px;
     height: 75px;
     width: 1390px;
     background-color: white;
-    /*border: 2px lightskyblue solid;*/
 }
 
 .top>span{
@@ -71,6 +73,7 @@ body{
     color: orange;
 }
 
+/* search window */
 .search{
     display: inline-block;
     margin-top: 20px;
@@ -102,6 +105,7 @@ body{
     border: 1px black dashed;
 }
 
+
 h1{
     margin-top: 40px; 
     margin-bottom: 30px;
@@ -109,11 +113,11 @@ h1{
     color: #BD997B;
 }
 
+/* food img container */
 .container{
     margin-top: 30px;
     height: 500px;
     background-color: white;
-    /*border: 2px lightskyblue solid;*/
 }
 
 .container img, .food_contain img{
@@ -140,7 +144,6 @@ h1{
     font-weight: bold;
     font-family: Georgia;
     cursor: pointer;
-    /*border: 2px lightskyblue solid;*/
 }
 
 .container span:hover, .food_contain span:hover, .material_contain span:hover{
@@ -196,7 +199,6 @@ h1{
     width: 50px;
     margin-top: 10px;
     margin-right: 5px;
-    /*border: 2px lightskyblue solid;*/
 }
 
 #span{
