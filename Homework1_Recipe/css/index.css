@@ -1,3 +1,4 @@
+/* class css definitions */
 body{
     margin: 0 auto;
     text-align: center;
@@ -201,14 +202,66 @@ h1{
     margin-right: 5px;
 }
 
-#span{
-    width: 932px;
-    margin-bottom: 20px;
+/* id css definitions */
+#icon_title{
+    color: red;
+    font-family: Georgia;
+    font-size: 20px;
 }
-
 #link{
     float: left;
     font-size: 30px;
     margin-left: 100px;
     margin-right: 60px;
+}
+#over_wide_title{
+    margin-right: 700px;
+}
+#hum_img{
+    width: 420px;
+}
+#tur_img{
+    width: 360px;
+    margin-right: 10px;
+}
+#little_con{
+    height: 80px;
+}
+#food_con{
+    height: 800px;
+    background-color: #F8F8F8;
+}
+#span{
+    width: 932px;
+    margin-bottom: 20px;
+}
+#noddles{
+    margin-left: 60px;
+}
+#dumpling{
+    margin-left: 70px;
+    margin-right: 100px;
+}
+#egg{
+    margin-left: 65px;
+}
+#mat_title{
+    margin-left: 16px;
+}
+#cinnamon{
+    margin-left: 130px;
+}
+#bream{
+    margin-left: 150px;
+}
+#bottom_con{
+    margin: 0 0 20px 0;
+    height: 170px;
+    background-color: black;
+    color: white;
+}
+#bottom_title{
+    color: white;
+    margin: 8px 0 0 20px;
+    display: block;
 }
