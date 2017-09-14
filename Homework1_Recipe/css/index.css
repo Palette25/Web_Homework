@@ -32,6 +32,7 @@ body{
     float: left;
     height: 26px;
     border: 2px black solid;
+    
 }
 
 .header span:hover{
@@ -72,6 +73,7 @@ body{
 
 .top a:hover{
     color: orange;
+    text-shadow: 1px 1px 1px;
 }
 
 /* search window */
@@ -145,10 +147,6 @@ h1{
     font-weight: bold;
     font-family: Georgia;
     cursor: pointer;
-}
-
-.container span:hover, .food_contain span:hover, .material_contain span:hover{
-    background-color: gray;
 }
 
 .container h4{
