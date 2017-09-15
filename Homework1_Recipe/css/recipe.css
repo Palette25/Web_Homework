@@ -26,6 +26,10 @@ body{
 	background-color:  #FFFFC8;
 }
 
+.none_underline{
+	text-decoration: none;
+}
+
 /* In order to change the black circle into good photo*/
 .list_ele{
 	list-style-image: url("../img/pie_icon.gif");
