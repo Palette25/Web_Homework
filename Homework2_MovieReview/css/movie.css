@@ -66,13 +66,16 @@ h1{
 }
 .dl{
 	float: right;
+	font-family: Arial sans-serif;
 	padding: 10px;
+}
+dl{
+	margin: 0;
 }
 .dl dt{
 	font-weight: bold;
 }
 .dl dd{
-	margin-left: 40px;
 	margin-bottom: 1em; 
 	padding-right: 5px;
 }
