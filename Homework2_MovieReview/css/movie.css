@@ -104,8 +104,9 @@ q {
 	font-weight: bold;
 }
 
-.italic{
+.author span{
 	font-style: italic;
+	display: inline;
 }
 
 .left_comment img, .right_comment img{

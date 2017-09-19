@@ -1,0 +1,117 @@
+body{
+	
+}
+
+#at-plus-container{
+	margin: 25% 0 5% 48%;
+}
+
+#bottom-positioner{
+
+}
+
+#button{
+
+}
+
+#info-bar{
+	visibility: hidden;
+}
+
+.info{
+
+}
+
+.page{
+
+}
+
+.user{
+
+}
+
+.comment{
+
+}
+
+.mine{
+
+}
+
+.posted{
+
+}
+
+.like{
+
+}
+
+#control-ring-container{
+
+}
+
+#control-ring{
+	visibility: hidden;
+	list-style-type: none;
+	transition: all 0.5s;
+}
+
+#button:hover #control-ring{
+	visibility: visible;
+}
+
+.button{
+	height: 25px;
+	width: 25px;
+	border-radius: 20px;
+	background-size: 20px 16px;
+}
+
+.mask{
+	background: url("img/mask.png") center no-repeat;
+	background-color: gray;
+}
+
+.history{
+	background: url("img/history.png") center no-repeat;
+	background-color: gray;
+}
+
+.message{
+	background: url("img/message.png") center no-repeat;
+	background-color: gray;
+}
+
+.setting{
+	background: url("img/setting.png") center no-repeat;
+	background-color: gray;
+}
+
+.sign{
+	background: url("img/sign.png") center no-repeat;
+	background-color: gray;
+}
+
+.unread{
+
+}
+
+.icon{
+	background: url("img/atplus_white.png") center no-repeat;
+	background-color: #989FCF;
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	background-size: 20px 16px;
+	border-radius: 20px;
+	transition: all 0.5s;
+}
+
+#button:hover .icon{
+	background: url("img/atplus_green.png") center no-repeat;
+	background-color: rgba(48, 63, 159, 1); 
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	background-size: 40px 30px;
+}
