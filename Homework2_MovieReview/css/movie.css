@@ -3,21 +3,26 @@ body{
 	background-image: url("../img/background.png");
 	font-size: 8pt;
 	font-family: Verdana,  Tahoma, sans-serif;
+	position: relative;
 }
 
 .main{
 	margin: 0 auto;
 	width: 800px;
-	height: 890px;
+	height: 893px;
 	border: 4px solid gray;
 }
 
 h1{
 	text-align: center;
+	font-size: 24pt;
 }
 
 .header{
 	text-align: center;
+	background-image: url("../img/bannerbackground.png");
+	height: 50px;
+	background-repeat: repeat-x;
 }
 .main_header{
 	float: left;
@@ -101,7 +106,7 @@ dl{
 	padding: 8px;
 }
 
-q {
+q{
 	width: 100%;
 	font-size: 8pt;
 	font-weight: bold;
@@ -122,12 +127,10 @@ q {
 	display: inline-block;
 	margin: 10px 0 3em;
 	width: 250px;
-	/*border: 2px solid lightskyblue;*/
 }
 
 .author img{
 	margin-left: 5px;
-	/*border: 2px solid lightskyblue;*/
 }
 
 .bottom_contain{
@@ -143,7 +146,7 @@ q {
  }
 
 .img_contain{
-	float: right;
-	margin: -65px -100px 0 0;
-	padding-left: 20px;
+	position: fixed;
+	right: 5px;
+	bottom: 2px;
 }
