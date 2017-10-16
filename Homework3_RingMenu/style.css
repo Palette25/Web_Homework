@@ -3,7 +3,6 @@ body{
 	width: 100%;
 	margin: 0;
 	font-family: Verdana;
-	/*background-color: gray;*/
 }
 
 #at-plus-container{
@@ -30,12 +29,13 @@ body{
 #info-bar{
 	opacity: 0.0;
 	position: absolute;
-	transition: all 0.55s;
+	transition: all 0.8s;
 	background-color: white;
 	width: 25px;
 	height: 25px;
 	bottom: 45px;
 	left: 32px;
+	overflow: hidden;
 	border-radius: 50%;
 }
 
@@ -78,19 +78,19 @@ body{
 }
 
 .info .mine{
-	display: inline-block;
-	width: 50%;
-	bottom: 10px;
-	position: absolute;
+	display: inline;
 	color: white;
 }
 
-.info .posted{
-	left: 10px;
+.posted{
+	display: inline;
+	margin-left: 18px; 
 }
 
-.info .like{
-	left: 60px;
+.like{
+	display: inline;
+	margin-top: -10px; 
+	margin-left: 10px; 
 }
 
 .mine span{
@@ -120,7 +120,7 @@ body{
 	bottom: 60px;
 	left: 75px;
 	border-radius: 50%;
-	transition: all 0.5s;
+	transition: all 0.8s;
 }
 
 #button:hover #control-ring li{
@@ -182,6 +182,7 @@ body{
 	height: 20px;
 	background-color: red;
 	border-radius: 50%;
+	font-size: 15px;
 }
 
 .apb{
