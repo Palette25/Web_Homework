@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.head{
+	font-weight: bold;
+}
+
+#wall{
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+	background-color: #EDEDED;
+	border: 1px solid black;
+}
+
+#tip{
+	height: 40px;
+	font-size: 20px;
+	color: red;
+}

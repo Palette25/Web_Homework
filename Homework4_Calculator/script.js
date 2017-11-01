@@ -35,16 +35,26 @@ function add(temp){
 
 function getResult(text){
     try{
+        var font_zero = text[0]==='0'?true:false;
         if(multi_divide(text)) throw "Error";
         for(var i=0;i<text.length;i++){
-            if((text[i]>='0'&&text[i]<='9')|| text[i]==='+'
-                ||text[i]==='-'|| text[i]==='*'||text[i]==='/'
-                ||text[i]==='('||text[i]===')'|| text[i]==='.') continue;
+            if((text[i]>='0'&&text[i]<='9')|| isOperator(text[i]) || text[i]==='.') {
+                if(text[i]==='0'&&font_zero===true) {
+                    text = text.substr(0, i) + text.substr(i+1, text.length);
+                    i--;
+                }
+                else if(text[i]!=='0') {
+                    if(isOperator(text[i])) font_zero = true;
+                    else font_zero = false;
+                }
+            }
             else throw "Error";
         }
         var result = eval(text);
         if(result!==Infinity&&!isNaN(result)) {
-            input.value = result;
+            result = result.toFixed(13);
+            var l_result = parseFloat(result.toString());
+            input.value = l_result;
             get_flag = true;
         }
         else throw "Error";
@@ -66,4 +76,10 @@ function multi_divide(text){
         if(text[i]=='/'&&(text[i+1]=='/'||text[i+1]=='*')) return true;
     }
     return false;
+}
+
+function isOperator(text){
+    if(text==='+'||text==='-'|| text==='*'
+        ||text==='/'||text==='('||text===')') return true;
+    else return false;
 }
