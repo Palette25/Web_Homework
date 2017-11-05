@@ -2,6 +2,7 @@ body{
     text-align: center;
     margin: 0 auto;
     width: 600px;
+    font-family: Consola, sans-serif;
 }
 
 .head{
@@ -17,7 +18,17 @@ body{
 }
 
 #tip{
+	text-align: center;
 	height: 40px;
 	font-size: 20px;
 	color: red;
+	transition: opacity 0.5s;
+}
+
+.tip_h{
+	opacity: 0;
+}
+
+.tip_s{
+	opacity: 1;
 }

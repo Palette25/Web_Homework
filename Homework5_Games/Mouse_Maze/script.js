@@ -12,8 +12,20 @@ cav.height = 300;
 cav.width = 500;
 
 function set_tip(mes){
-    mes = mes || ' ';
-    mess.innerText = mes;
+    var mes = mes || ' ';
+    if (mess.innerText !== mes) {
+        if (mess.className === "tip_s") {
+            mess.className = "tip_h";
+            setTimeout(function () {
+                mess.className = "tip_s";
+                mess.innerText = mes;
+            }, 300);
+        }
+        else {
+            mess.className = "tip_s";
+            mess.innerText = mes;
+        }
+    }
 }
 
 function drawup(color){
@@ -128,6 +140,14 @@ function onEndState(x, y){
     return false;
 }
 
+function onRoadState(x, y){
+    if(x>=0&&x<=500&&y>=0&&y<=300){
+        if(!onStartState(x, y)&&!onEndState(x, y)
+            &&!onUpState(x, y)&&!onDownState(x, y)) return true;
+    }
+    return false;
+}
+
 function mouse_check(e){
     e = e || window.event;
     var mouse_x = e.pageX || (e.clientX + document.documentElement.scrollLeft || document.body.scrollLeft);
@@ -169,4 +189,5 @@ function mouse_check(e){
 
 window.onload = function () {
     intialize();
+    mess.className = "tip_h";
 }
