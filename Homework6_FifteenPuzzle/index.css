@@ -209,3 +209,26 @@ html, body{
 .win{
     color: mediumseagreen;
 }
+
+#pre_image{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
+    background-image: url("panda.jpg");
+    top: 200px;
+    right: 0;
+    border: 2px solid mediumseagreen;
+}
+
+#words{
+    position: absolute;
+    height: 20px;
+    width: 150px;
+    padding: 2px 0 2px 0;
+    top: -28px;
+    right: -2px;
+    font-weight: bold;
+    border: 2px solid mediumseagreen;
+    border-bottom: none;
+}

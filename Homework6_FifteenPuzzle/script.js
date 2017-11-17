@@ -164,6 +164,7 @@ function upload(){
 			if(i<15) child[i].className = "piece_i";
 			else child[i].className = "blank";
 		}
+		document.getElementById("pre_image").style.backgroundImage = "url(\'" + e.target.result + "\'";
 		result.innerText = "Now please click start button to start game.";
 		start_flag = false;
 		start_btn.innerText = "Start Game";
