@@ -60,12 +60,21 @@ function handle_other_request(response, filepath){
         if(path[i]==='.') break;
     }
     var type = path.substr(i+1, path.length);
-    fs.readFile('./'+path, 'utf-8', function(err, data){
-        if(err) throw err;
-        if(type==='js') response.writeHead(200, {'Content-Type':'text/javascript'});
-        else response.writeHead(200, {'Content-Type':'text/' + type});
-        response.end(data);
-    });
+    if(type==='ico'){
+        fs.readFile('./'+path, 'binary', function(err, data){
+            if(err) throw err;
+            type = 'x-icon';
+            response.writeHead(200, {'Content-Type':'text/' + type});
+            response.end(data, 'binary');
+        });
+    }else {
+        fs.readFile('./'+path, 'utf-8', function(err, data){
+            if(err) throw err;
+            if(type==='js') response.writeHead(200, {'Content-Type':'text/javascript'});
+            else response.writeHead(200, {'Content-Type':'text/' + type});
+            response.end(data);
+        });
+    }
 }
 
 function find_repeat(input){
