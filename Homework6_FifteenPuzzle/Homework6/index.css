@@ -25,19 +25,19 @@ html, body{
 
 #time{
     margin: 0 auto;
-    width: 400px;
-    height: 40px;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
 }
 
 #time_s{
-    width: 50px;
+    width: 80px;
 }
 
 #image{
     height: 400px;
     width: 380px;
-    margin-left: 32%;
-    transition: all 1s;
+    margin: 0 auto;
 }
 
 #start, #pause, #update{
@@ -49,10 +49,6 @@ html, body{
     box-shadow: 5px 5px 1px 1px gray;
     line-height: 30px;
     transition: all 0.5s;
-}
-
-.back{
-    background-color: mediumseagreen;
 }
 
 #start:hover, #pause:hover, .piece_i:hover, #update:hover{
@@ -215,9 +211,9 @@ html, body{
     height: 150px;
     width: 150px;
     background-size: 150px 150px;
-    background-image: url("panda.jpg");
     top: 200px;
     right: 0;
+    background-image: url("panda.jpg");
     border: 2px solid mediumseagreen;
 }
 

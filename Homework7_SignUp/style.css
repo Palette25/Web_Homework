@@ -1,0 +1,81 @@
+body{
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 500px;
+    text-align: center;
+    width: 600px;
+    font-family: Verdana, Tahoma, sans-serif;
+    border: 5px solid mediumseagreen;
+}
+
+div{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+span{
+    margin-right: 13px;
+}
+
+.detail{
+    text-align: left;
+    margin-left: 210px;
+    margin-top: 50px;
+}
+
+#name-tip, #id-tip, #phone-tip, #mail-tip{
+    height: 20px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+
+#reset, #submit, #re_index{
+    height: 30px;
+    width: 70px;
+    outline: none;
+    background-color: mediumseagreen;
+    box-shadow: 2px 2px 1px 1px gray;
+    border-radius: 10px;
+    transition: all 1s;
+    margin: 0 20px 10px 20px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+#re_index{
+    width: 150px;
+    margin-top: 30px;
+}
+
+#reset:hover, #submit:hover, #re_index:hover{
+    transform: scale(1.1);
+}
+
+#btn{
+    margin: 0 auto;
+    width: 300px;
+}
+
+#warning{
+    position: absolute;
+    opacity: 0;
+    height: 250px;
+    width: 180px;
+    border: 3px solid mediumseagreen;
+    right: 0;
+    top: 80px;
+    transition: all 0.6s;
+}
+
+#msg{
+    height: 100px;
+    width: 180px;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
