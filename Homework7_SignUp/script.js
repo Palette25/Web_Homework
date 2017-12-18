@@ -1,7 +1,7 @@
 /* Created by Palette in 2017/11/26 */
 
 //Regular Expressions
-var username = /^[a-zA-Z][a-zA-z0-9\_]{5,17}/, id = /[1-9][0-9]{7}/, phone = /[1-9][0-9]{10}/;
+var username = /^[a-zA-Z][a-zA-z0-9\_]{5,17}/, id = /^[1-9][0-9]{7}$/, phone = /^[1-9][0-9]{10}$/;
 var mail = /^[a-zA-Z0-9\_\-]+@(([a-zA-Z0-9\_\-])+\.)+[a-zA-Z]{2,4}$/;
 
 window.onload = function(){
@@ -116,11 +116,11 @@ function set_focus_text(partName, realName, text_){
         $("#warning").css('opacity', 0);
         if(partName.placeholder!=='') partName.value = '';
         if(!validator(partName.val(), realName)) {
-            $('#'+realName+'-tip').css('color', 'red');
+            $('#'+realName+'-tip').css('color', 'darkred');
             $('#'+realName+'-tip').text(text_);
         }
         else {
-            $('#'+realName+'-tip').css('color', 'mediumseagreen');
+            $('#'+realName+'-tip').css('color', 'green');
             $('#'+realName+'-tip').text("✔");
         }
     });

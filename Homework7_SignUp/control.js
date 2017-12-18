@@ -60,10 +60,11 @@ function handle_other_request(response, filepath){
         if(path[i]==='.') break;
     }
     var type = path.substr(i+1, path.length);
-    if(type==='ico'){
+    if(type==='ico'||type==='jpg'){
         fs.readFile('./'+path, 'binary', function(err, data){
             if(err) throw err;
-            type = 'x-icon';
+            if(type==='ico') type = 'x-icon';
+            else type = 'x-jpg';
             response.writeHead(200, {'Content-Type':'text/' + type});
             response.end(data, 'binary');
         });

@@ -6,11 +6,13 @@ body{
     width: 600px;
     font-family: Verdana, Tahoma, sans-serif;
     border: 5px solid mediumseagreen;
+    background: url('timg.jpg') no-repeat fixed;
+    background-size: 100% 100%;
 }
 
 div{
-    margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 span{
@@ -59,6 +61,8 @@ span{
 #btn{
     margin: 0 auto;
     width: 300px;
+    margin-top: 30px;
+    margin-left: 170px;
 }
 
 #warning{
