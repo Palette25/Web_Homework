@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        title User Information
+        link(rel="stylesheet", href="../static/css/style.css")
+        script(src="../static/js/jquery-3.2.1.js")
+        script(src="../static/js/detail.js")
+    body
+        h2 用户详情
+        div.detail
+            span 用户名：#{username}
+        div.detail
+            span 学号：#{id}
+        div.detail
+            span 电话：#{phone}
+        div.detail
+            span 邮箱：#{mail}
+        if (flag)
+            div#warning_de
+                p#msg 不可以访问其他用户的详情界面哦~
+        else
+            div#warning
+        div#right_up_sign
+            span#back_text 退出登录

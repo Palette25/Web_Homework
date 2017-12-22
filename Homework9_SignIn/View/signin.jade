@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        title Sign In
+        link(rel="stylesheet", href="../static/css/style.css")
+        script(src="../static/js/jquery-3.2.1.js")
+        script(src="../static/js/signin.js")
+    body
+        h2 用户登录界面
+        form(action="http://localhost:8000/regist", method="post")
+            div#signin_name
+                span 用户名：
+                input(type="text", name="name", id="name", placeholder="Username")
+            div#signin_pass
+                span 密码：
+                input(type="password", name="pass", id="pass", placeholder="Password")
+            div#btn
+            input(type="button", id="reset", value="重置")
+            input(type="button", id="signin", value="登录")
+            div#warning
+            div#left_up_sign
+                span#back_text << 返回注册界面

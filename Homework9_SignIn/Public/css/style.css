@@ -1,0 +1,157 @@
+body{
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 620px;
+    text-align: center;
+    width: 600px;
+    font-family: Verdana, Tahoma, sans-serif;
+    border: 5px solid mediumseagreen;
+    background: url('../image/timg.jpg') no-repeat fixed;
+    background-size: 100% 100%;
+}
+
+div{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+span{
+    margin-right: 13px;
+}
+
+.detail{
+    text-align: left;
+    margin-left: 210px;
+    margin-top: 50px;
+}
+
+#name-tip, #id-tip, #phone-tip, #mail-tip, #pass-tip, #repass-tip{
+    height: 20px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+
+#reset, #submit, #re_index, #signin{
+    height: 30px;
+    width: 70px;
+    outline: none;
+    background-color: mediumseagreen;
+    box-shadow: 3px 3px 2px 2px green;
+    border-radius: 10px;
+    transition: all 1s;
+    margin: 0 20px 10px 20px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+#re_index{
+    width: 150px;
+    margin-top: 30px;
+}
+
+#reset:hover, #submit:hover, #re_index:hover, #signin:hover{
+    transform: scale(1.1);
+}
+
+#btn{
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 170px;
+}
+
+#warning{
+    position: absolute;
+    opacity: 0;
+    height: 250px;
+    width: 180px;
+    border: 3px solid mediumseagreen;
+    right: 0;
+    top: 80px;
+    transition: all 0.6s;
+}
+
+#msg{
+    height: 150px;
+    width: 170px;
+    font-size: 19px;
+    font-weight: bold;
+    color: red;
+}
+
+#msg_r{
+    height: 150px;
+    width: 170px;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+}
+
+#pass{
+    margin-left: 10px;
+}
+
+#repass-text{
+    margin-right: 0px;
+    margin-left: -50px;
+}
+
+#re-pass{
+    margin-left: 20px;
+}
+
+#signin_name{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#signin_pass{
+    margin-bottom: 100px;
+}
+
+#left_up_sign, #right_up_sign{
+    position: absolute;
+    background-color: mediumseagreen;
+    height: 70px;
+    width: 200px;
+    top: -20px;
+    font-size: 19px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#left_up_sign{
+    left: 5px;
+}
+
+#right_up_sign{
+    right: 5px;
+}
+
+#back_text{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+#left_up_sign:hover, #right_up_sign:hover{
+    background-color: #00FA85;
+    transform: scale(1.05);
+}
+
+#warning_de{
+    position: absolute;
+    opacity: 1;
+    height: 150px;
+    width: 200px;
+    border: 3px solid mediumseagreen;
+    right: 0;
+    top: 80px;
+    transition: all 0.6s;
+    cursor: pointer;
+}

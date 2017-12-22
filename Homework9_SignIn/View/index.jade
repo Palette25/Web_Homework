@@ -1,0 +1,43 @@
+//- index.jade
+
+doctype html
+html
+    head
+        title Sign Up
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        link(rel="stylesheet", href="../static/css/style.css")
+        script(src="../static/js/jquery-3.2.1.js")
+        script(src="../static/js/index.js")
+    body
+        h2 用户注册界面
+        form(action="http://localhost:8000", method="post")
+            div
+                span 用户名：
+                input(type="text", name="name", id="name", placeholder="Username")
+            p#name-tip
+            div
+                span 密码：
+                input(type="password", name="pass", id="pass", placeholder="Password")
+            p#pass-tip
+            div
+                span#repass-text 请重复密码：
+                input(type="password", name="re-pass", id="re-pass", placeholder="Again Password")
+            p#repass-tip
+            div
+                span 学号：
+                input(type="text", name="id", id="id", placeholder="Student ID")
+            p#id-tip
+            div
+                span 电话：
+                input(type="text", name="phone", id="phone", placeholder="Phone Number")
+            p#phone-tip
+            div
+                span 邮箱：
+                input(type="text", name="mail", id="mail", placeholder="E-mail")
+            p#mail-tip
+            div#btn
+                input(type="button", id="reset", value="重置")
+                input(type="button", id="submit", value="提交")
+            div#warning
+            div#right_up_sign
+                span#back_text 转到登录界面 >> 
