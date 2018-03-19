@@ -1,4 +1,4 @@
-## Palette's Github repository for Web2.0 homework
+## Palette25's Github repository for Web2.0 homework
 
 ### Self-Introduction
 
