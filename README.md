@@ -2,9 +2,8 @@
 
 ### Self-Introduction
 
-My name is 陈明亮, a student studying in SYSU with software engineering as my manager.
+My name is CML, a student studying in SYSU with software engineering as my manager.
 班级: 软工一班
-学号: 16340023
 
 ### Repository-Introduction
 
